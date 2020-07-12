@@ -1,17 +1,16 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
-import { Landing } from "../components/screens";
+import { Home, Auth } from "./pages";
 
-function AppNavigator() {
+export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={() => <Redirect to="/dashboard" />} />
-        <Route exact path="/dashboard" component={Landing} />
+        <Route exact path="/dashboard" component={Home} />
+        <Route exact path="/auth" component={Auth} />
       </Switch>
     </BrowserRouter>
   );
 }
-
-export default AppNavigator;

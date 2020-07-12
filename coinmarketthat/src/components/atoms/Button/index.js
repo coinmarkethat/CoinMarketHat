@@ -1,12 +1,9 @@
 import React from "react";
-import "./style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from "react-bootstrap";
 
-const Button = ({ children, ...rest }) => {
-  return (
-    <button className="button" {...rest}>
-      {children}
-    </button>
-  );
-};
-
-export default Button;
+export default ({ children, click, type }) => (
+  <Button onClick={click} variant={type}>
+    {children}
+  </Button>
+);
