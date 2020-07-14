@@ -1,13 +1,15 @@
-import React from "react";
-import "./style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { FormControl } from "react-bootstrap";
-function Input({ type, placeholder, value, onChange, mode }) {
+import React from 'react';
+import { FormControl } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './style.css';
+
+const Input = ({ type, placeholder, value, onChange, mode }) => {
   let setMode;
-  if (mode === "white") {
-    setMode = "a__input__dark";
+  if (mode === 'white') {
+    setMode = 'a__input__dark';
   } else {
-    setMode = "a__input__white";
+    setMode = 'a__input__white';
   }
   return (
     <FormControl
@@ -20,6 +22,6 @@ function Input({ type, placeholder, value, onChange, mode }) {
       onChange={onChange}
     />
   );
-}
+};
 
 export default Input;

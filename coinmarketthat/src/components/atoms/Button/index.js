@@ -1,9 +1,13 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Button } from "react-bootstrap";
+import React from 'react';
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default ({ children, click, type }) => (
-  <Button onClick={click} variant={type}>
-    {children}
-  </Button>
-);
+const CustomButton = ({ children, click, type }) => {
+  return (
+    <Button onClick={click} variant={type}>
+      {children}
+    </Button>
+  );
+};
+
+export default CustomButton;

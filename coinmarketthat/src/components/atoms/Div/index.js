@@ -1,12 +1,13 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+
+import './style.css';
 
 const Div = ({ children, bgColor }) => {
   let color;
-  if (bgColor === "white") {
-    color = "white";
+  if (bgColor === 'white') {
+    color = 'white';
   } else {
-    color = "gray";
+    color = 'gray';
   }
   return <div className={color}>{children}</div>;
 };

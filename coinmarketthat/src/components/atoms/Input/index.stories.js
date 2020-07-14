@@ -1,9 +1,11 @@
-import React from "react";
-import Input from "./index";
-import { storiesOf } from "@storybook/react";
-import { Container } from "react-bootstrap";
-storiesOf("atom/Input")
-  .add("Dark Input", (state, setState) => (
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { Container } from 'react-bootstrap';
+
+import Input from './index';
+
+storiesOf('atom/Input')
+  .add('Dark Input', (state, setState) => (
     <Container className="mt-3">
       <Input
         mode="dark"
@@ -16,7 +18,7 @@ storiesOf("atom/Input")
       {state.value}
     </Container>
   ))
-  .add("White Input", (state, setState) => (
+  .add('White Input', (state, setState) => (
     <Container className="mt-3">
       <Input
         mode="white"
@@ -28,7 +30,7 @@ storiesOf("atom/Input")
       />
     </Container>
   ))
-  .add("Password Input Dark", (state, setState) => (
+  .add('Password Input Dark', (state, setState) => (
     <Container className="mt-3">
       <Input
         mode="dark"
@@ -40,7 +42,7 @@ storiesOf("atom/Input")
       />
     </Container>
   ))
-  .add("Password Input white", (state, setState) => (
+  .add('Password Input white', (state, setState) => (
     <Container className="mt-3">
       <Input
         mode="white"
