@@ -8,4 +8,6 @@ import H5 from "./H5";
 import Image from "./Image";
 import Label from "./Label";
 import Paragraph from "./Paragraph";
-export { Anchor, Button, H1, H2, H3, H4, H5, Image, Label, Paragraph };
+import Icon from "./Icon";
+
+export { Anchor, Button, H1, H2, H3, H4, H5, Image, Label, Paragraph, Icon };

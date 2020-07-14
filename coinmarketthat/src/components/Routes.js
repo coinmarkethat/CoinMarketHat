@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-import { Home, Auth } from "./pages";
+import { Home, Auth } from './pages';
 
 export default function Routes() {
   return (

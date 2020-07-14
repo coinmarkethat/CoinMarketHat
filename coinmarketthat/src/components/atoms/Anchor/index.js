@@ -1,12 +1,13 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
 
-function Anchor({ children, link }) {
+import './style.css';
+
+const Anchor = ({ children, link }) => {
   return (
     <a href={link} className="a__anchor">
       {children}
     </a>
   );
-}
+};
 
 export default Anchor;
