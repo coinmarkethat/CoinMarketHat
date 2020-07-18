@@ -8,7 +8,7 @@ storiesOf('atom/Input')
   .add('Dark Input', (state, setState) => (
     <Container className="mt-3">
       <Input
-        mode="dark"
+        theme="dark"
         type="input"
         placeholder="Dark theme"
         text="Please input some text here."
@@ -21,7 +21,7 @@ storiesOf('atom/Input')
   .add('White Input', (state, setState) => (
     <Container className="mt-3">
       <Input
-        mode="white"
+        theme="white"
         type="input"
         placeholder="White theme"
         text="Please input some text here."
@@ -33,7 +33,7 @@ storiesOf('atom/Input')
   .add('Password Input Dark', (state, setState) => (
     <Container className="mt-3">
       <Input
-        mode="dark"
+        theme="dark"
         type="password"
         placeholder="Password"
         text="Please input some text here."
@@ -45,7 +45,7 @@ storiesOf('atom/Input')
   .add('Password Input white', (state, setState) => (
     <Container className="mt-3">
       <Input
-        mode="white"
+        theme="white"
         type="password"
         placeholder="Password"
         text="Please input some text here."

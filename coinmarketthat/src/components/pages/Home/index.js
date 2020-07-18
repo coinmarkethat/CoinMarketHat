@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
+import { H1, Div } from '../../atoms';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home Pages!</h1>
-    </div>
+    <Div theme="dark">
+      <H1>Home Pages!</H1>
+    </Div>
   );
 };
 

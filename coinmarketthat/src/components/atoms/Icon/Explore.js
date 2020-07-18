@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const Explore = (props) => (
   <svg
-    width="44"
-    height="30"
+    width={props.width || 24}
+    height={props.height || 24}
     viewBox="0 0 44 30"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -11,14 +11,14 @@ const Explore = (props) => (
     <g filter="url(#filter0_d)">
       <path
         d="M16.1818 7.27786L38 1L27.8182 14.4526L6 20.7304L16.1818 7.27786Z"
-        stroke={props.color || "black"}
+        stroke={props.color || 'black'}
       />
       <ellipse
         cx="22.0002"
         cy="10.865"
         rx="2.9091"
         ry="1.79373"
-        fill={props.color || "#000000"}
+        fill={props.color || '#000000'}
       />
     </g>
     <defs>
@@ -29,9 +29,9 @@ const Explore = (props) => (
         width="42.6101"
         height="29.522"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
