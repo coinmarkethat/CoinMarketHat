@@ -13,3 +13,8 @@
   box-sizing: border-box;
   border-radius: 4px;
 }
+
+.a__input__noboder {
+  widows: 400;
+  border-style: dotted;
+}

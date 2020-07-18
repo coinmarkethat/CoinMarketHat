@@ -1,9 +1,11 @@
-.gray {
-  background-color: dimgrey;
-  color: aliceblue;
+.main-theme {
+  background-color: #FFFFFF;
+  color: #5c4949;
+  font-family: 'Roboto', sans-serif;
 }
 
-.while {
-  background-color: aliceblue;
-  color: black;
+.dark-theme {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }

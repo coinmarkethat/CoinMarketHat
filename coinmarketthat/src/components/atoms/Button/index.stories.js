@@ -6,7 +6,7 @@ import Button from './index';
 
 storiesOf('atom/button')
   .add('primary', () => (
-    <Button type="primary" click={action(console.log('Click me'))}>
+    <Button type="primary" onClick={action(console.log('Click me'))}>
       Subscribe
     </Button>
   ))

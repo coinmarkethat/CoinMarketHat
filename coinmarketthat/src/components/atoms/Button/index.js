@@ -2,9 +2,9 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const CustomButton = ({ children, click, type }) => {
+const CustomButton = ({ children, onClick, type, className, ...rest }) => {
   return (
-    <Button onClick={click} variant={type}>
+    <Button className={className} onClick={onClick} variant={type} {...rest}>
       {children}
     </Button>
   );
