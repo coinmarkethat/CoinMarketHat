@@ -11,6 +11,7 @@ import Label from './Label';
 import Paragraph from './Paragraph';
 import Icon from './Icon';
 import Input from './Input';
+import HR from './HR';
 
 export {
   Anchor,
@@ -26,4 +27,5 @@ export {
   Paragraph,
   Icon,
   Input,
+  HR,
 };

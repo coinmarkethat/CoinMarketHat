@@ -1,0 +1,17 @@
+.molecule-moon-list {
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border-bottom: 2px solid gray; */
+        width:500px;
+        margin:auto;
+    }
+    .hr-line{
+        width: 500px;
+    }
+    .btn:active{
+        outline:none;
+        border:none;
+    }
+}
