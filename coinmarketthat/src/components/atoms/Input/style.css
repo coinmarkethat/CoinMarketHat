@@ -1,6 +1,7 @@
 .a__input__dark {
   width: 500;
-  background: #e5e5e5;
+  background: #000000;
+
   border: 1px solid #bebebe;
   box-sizing: border-box;
   border-radius: 4px;
@@ -8,7 +9,7 @@
 
 .a__input__white {
   width: 500;
-  background: #000000;
+  background: #e5e5e5;
   border: 1px solid #bebebe;
   box-sizing: border-box;
   border-radius: 4px;
