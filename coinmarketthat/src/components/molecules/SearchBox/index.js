@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 import { Input, Icon } from '../../atoms';
+import './styles.scss';
 
 const SearchBox = ({
   theme,
@@ -16,7 +17,7 @@ const SearchBox = ({
   width,
 }) => {
   return (
-    <Container>
+    <Container className="molecules-searchbox-wrapper">
       <Row>
         <Icon name={icon} color={color} height={height} width={width} />
         <Input

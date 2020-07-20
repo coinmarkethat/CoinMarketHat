@@ -13,5 +13,5 @@ export {
   SearchBox,
   ClickableIcon,
   AddMoonCardlist,
-  SubscribeInput,
+  SubscribeInput
 };
