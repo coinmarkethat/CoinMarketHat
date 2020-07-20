@@ -4,7 +4,9 @@ import { Container, Row } from 'react-bootstrap';
 import { Icon, Label, Button } from '../../atoms';
 import './styles.scss';
 
-const IconText = ({ iconName, textTitle, color, onClick, type }) => {
+const IconText = ({
+  iconName, textTitle, color, onClick, type
+}) => {
   return (
     <Container>
       <Row className="molecule-icontext-box">

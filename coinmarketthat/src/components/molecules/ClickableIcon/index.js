@@ -4,7 +4,13 @@ import { Container, Row } from 'react-bootstrap';
 import { Icon, Div } from '../../atoms';
 import './styles.scss';
 
-const ClickableIcon = ({ onClick, iconName, color, height, width }) => {
+const ClickableIcon = ({
+  onClick,
+  iconName,
+  color,
+  height,
+  width
+}) => {
   return (
     <Container>
       <Row>

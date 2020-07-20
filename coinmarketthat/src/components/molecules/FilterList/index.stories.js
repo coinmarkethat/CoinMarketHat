@@ -4,12 +4,14 @@ import { action } from '@storybook/addon-actions';
 
 import FilterList from '.';
 
-storiesOf('molecule/filterList').add('FilterList', () => (
-  <FilterList
-    title={'Price'}
-    icon={'Plus'}
-    border={true}
-    onClick={action('plus clicked')}
-    type="link"
-  />
-));
+storiesOf('molecule/filterList').add('FilterList', () => {
+  return (
+    <FilterList
+      title="Price"
+      icon="Plus"
+      border
+      onClick={action('plus clicked')}
+      type="link"
+    />
+  );
+});
