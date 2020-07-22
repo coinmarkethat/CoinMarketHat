@@ -1,10 +1,8 @@
 import React from 'react';
 
 import { LabelTextInput } from '../../molecules';
-import {
-  Div, H3, Label, Anchor, Button
-} from '../../atoms';
-import './style.css';
+import { Div, H3, Label, Anchor, Button } from '../../atoms';
+import './styles.css';
 
 const theme = 'white';
 
@@ -13,7 +11,7 @@ class Signup extends React.Component {
     super(props);
     this.state = {
       email: null,
-      password: null
+      password: null,
     };
   }
 
@@ -23,8 +21,7 @@ class Signup extends React.Component {
       <Div theme={theme} className="organism-signup-div">
         <H3>Sign Up</H3>
         <Label>
-          Already have an account?
-          <Anchor>Sign in</Anchor>
+          Already have an account ? <Anchor link="">Sign in</Anchor>
         </Label>
         <Div theme={theme} className="organism-signup-div col-md-4 mt-5">
           <LabelTextInput
@@ -32,7 +29,9 @@ class Signup extends React.Component {
             type="input"
             placeholder="Enter email"
             value={email}
-            onChange={text => { return this.setState({ email: text.target.value }); }}
+            onChange={(text) => {
+              return this.setState({ email: text.target.value });
+            }}
             labelTitle="Email Address"
           />
           <br />
@@ -41,7 +40,9 @@ class Signup extends React.Component {
             type="password"
             placeholder="Enter password"
             value={password}
-            onChange={text => { return this.setState({ password: text.target.value }); }}
+            onChange={(text) => {
+              return this.setState({ password: text.target.value });
+            }}
             labelTitle="Password"
           />
           <Button
@@ -53,9 +54,7 @@ class Signup extends React.Component {
             Sign up
           </Button>
           <Label className="mt-5">
-            *By Signing up you agree to
-            {' '}
-            <br />
+            *By Signing up you agree to <br />
             our Terms of use and to receive
           </Label>
         </Div>
