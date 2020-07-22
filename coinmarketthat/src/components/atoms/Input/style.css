@@ -1,13 +1,12 @@
-.a__input__dark {
+.atom-input-dark {
   width: 500;
   background: #000000;
-
   border: 1px solid #bebebe;
   box-sizing: border-box;
   border-radius: 4px;
 }
 
-.a__input__white {
+.atom-input-white {
   width: 500;
   background: #e5e5e5;
   border: 1px solid #bebebe;
@@ -15,7 +14,7 @@
   border-radius: 4px;
 }
 
-.a__input__noboder {
+.atom-default {
   widows: 400;
   border-style: dotted;
 }

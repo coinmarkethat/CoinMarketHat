@@ -8,8 +8,8 @@ storiesOf('atom/Paragraph')
     <Paragraph txtColor="red">This is paragraph</Paragraph>
   ))
   .add('Black Color', () => <Paragraph txtColor="black">Black</Paragraph>)
-  .add('Brown Color', () => (
-    <Paragraph txtColor="brown">
+  .add('Gray Color', () => (
+    <Paragraph txtColor="gray">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis
       quis adipiscing scelerisque cursus id faucibus. Tincidunt arcu quam netus{' '}
     </Paragraph>

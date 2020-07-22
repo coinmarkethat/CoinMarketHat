@@ -4,7 +4,7 @@ import './style.css';
 
 const Anchor = ({ children, link }) => {
   return (
-    <a href={link} className="a__anchor">
+    <a href={link} className="atom-anchor">
       {children}
     </a>
   );

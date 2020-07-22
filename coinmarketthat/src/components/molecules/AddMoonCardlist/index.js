@@ -1,14 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-import {
-  Label, Image, HR, Div, Button
-} from '../../atoms';
+import { Label, Image, HR, Div, Button } from '../../atoms';
 import './styles.scss';
 
-const MoonCardList = ({
-  title, src, type, onClick, btnTitle
-}) => {
+const MoonCardList = ({ title, src, type, onClick, btnTitle }) => {
   return (
     <Div className="molecule-moon-list">
       <Row>

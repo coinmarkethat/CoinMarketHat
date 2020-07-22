@@ -4,16 +4,24 @@ import './style.css';
 
 const Paragraph = ({ children, txtColor }) => {
   let textColor;
-  if (txtColor === 'red') {
-    textColor = 'red';
-  } else if (txtColor === 'black') {
-    textColor = 'black';
-  } else if (txtColor === 'brown') {
-    textColor = 'brown';
-  } else if (txtColor === 'blue') {
-    textColor = 'blue';
-  } else if (txtColor === 'green') {
-    textColor = 'green';
+  switch (txtColor) {
+    case 'red':
+      textColor = 'red';
+      break;
+    case 'black':
+      textColor = 'black';
+      break;
+    case 'gray':
+      textColor = 'gray';
+      break;
+    case 'blue':
+      textColor = 'blue';
+      break;
+    case 'green':
+      textColor = 'green';
+      break;
+    default:
+      break;
   }
   return <p className={`${textColor}`}>{children}</p>;
 };

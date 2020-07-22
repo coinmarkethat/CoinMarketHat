@@ -8,13 +8,13 @@ const Input = ({ type, placeholder, value, onChange, theme }) => {
   let setMode;
   switch (theme) {
     case 'dark':
-      setMode = 'a__input__dark';
+      setMode = 'atom-input-dark';
       break;
     case 'white':
-      setMode = 'a__input__white';
+      setMode = 'atom-input-white';
       break;
     default:
-      setMode = 'a__input__noboder';
+      setMode = 'atom-default';
       break;
   }
   return (
