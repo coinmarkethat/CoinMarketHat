@@ -17,7 +17,7 @@ import Filter from './Filter';
 import Hamburger from './Hamburger';
 import ToggleMode from './ToggleMode';
 
-const Icon = (props) => {
+const Icon = props => {
   switch (props.name) {
   case 'CarbonClose':
     return <CarbonClose {...props} />;

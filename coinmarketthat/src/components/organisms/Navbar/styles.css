@@ -1,0 +1,47 @@
+.organism-navbar-white {
+  background-color: #FFFFFF;
+}
+
+.organism-navbar-dark {
+  background-color: #101010;
+}
+
+.organism-nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.organism-navbar-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.33px;
+}
+
+.organism-navbar-link-white {
+  color: #000000 !important;
+}
+
+.organism-navbar-link-dark {
+  color: #ffffff !important;
+}
+
+.organism-navbar-button {
+  display: flex;
+  flex-direction: row;
+  background-color: #0C2DC8;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-right: 16px;
+}
+
+.organism-navbar-button-label {
+  margin: 0px 0px 0px 8px;
+}
+
+.organism-navbar-search {
+  margin-right: 16px;
+}

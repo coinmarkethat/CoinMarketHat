@@ -5,6 +5,8 @@ import { Icon, Div } from '../../atoms';
 import './styles.scss';
 
 const ClickableIcon = ({
+  theme,
+  className,
   onClick,
   iconName,
   color,
@@ -14,7 +16,7 @@ const ClickableIcon = ({
   return (
     <Container>
       <Row>
-        <Div onClick={onClick && onClick}>
+        <Div theme={theme} className={className} onClick={onClick && onClick}>
           <Icon name={iconName} color={color} height={height} width={width} />
         </Div>
       </Row>
