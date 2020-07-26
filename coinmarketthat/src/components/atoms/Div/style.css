@@ -1,11 +1,16 @@
-.main-theme {
-  background-color: #FFFFFF;
+.white-theme {
+  background-color: #ffffff;
   color: #5c4949;
   font-family: 'Roboto', sans-serif;
 }
 
 .dark-theme {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.no-theme {
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }

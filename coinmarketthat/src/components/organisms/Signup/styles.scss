@@ -1,0 +1,33 @@
+.organism-signup-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        color:#101010;
+    }
+
+    div label:last-child{
+        margin-top:32px;
+        width: inherit;
+        text-align: center;
+    }
+
+    .molecule-container-textinput-label{
+        .atom-label{
+            color:#2A53D5;
+        }
+    }
+}
+  
+.dark-theme.organism-signup-div {
+    h3{
+        color:#ffffff;
+    }
+    .molecule-container-textinput-label{
+        .atom-label{
+            color:#ffffff;
+        }
+    }
+}

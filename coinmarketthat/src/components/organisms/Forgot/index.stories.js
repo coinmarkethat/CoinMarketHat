@@ -5,6 +5,10 @@ export default {
   title: 'organism',
 };
 
-export const forgot = () => {
-  return <Forgot className="signup-textfields" />;
+export const forgotwhite = () => {
+  return <Forgot className="signup-textfields" theme="white" />;
+};
+
+export const forgotdark = () => {
+  return <Forgot className="signup-textfields" theme="dark" />;
 };
