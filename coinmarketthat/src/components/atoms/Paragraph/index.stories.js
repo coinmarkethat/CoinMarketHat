@@ -17,5 +17,5 @@ storiesOf('atom/Paragraph')
   .add('Blue Color', () => (
     <Paragraph txtColor="blue">Subscribe with us</Paragraph>
   ))
-  .add('Green Color', () => <Paragraph txtColor="green">Blue</Paragraph>)
-  .add('Green Color', () => <Paragraph txtColor="green">Blue</Paragraph>);
+  .add('Green Color', () => <Paragraph txtColor="blue">Blue</Paragraph>)
+  .add('Green Color', () => <Paragraph txtColor="green">Green</Paragraph>);

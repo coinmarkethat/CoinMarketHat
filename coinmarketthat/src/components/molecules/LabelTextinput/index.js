@@ -15,7 +15,7 @@ const LabelTextInput = ({
   className
 }) => {
   return (
-    <Container className={'molecule-container-textinput-label' + '' + className}>
+    <Container className={'molecule-container-textinput-label' + ' ' + className}>
       <Row>
         <Label>{labelTitle}</Label>
         <Input

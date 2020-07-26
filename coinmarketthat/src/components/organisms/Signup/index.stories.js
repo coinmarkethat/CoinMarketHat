@@ -5,4 +5,10 @@ export default {
   title: 'organism'
 };
 
-export const signup = () => { return <Signup className="signup-textfields" />; };
+export const signupWhite = () => {
+  return <Signup className="signup-textfields" theme={'white'} />;
+};
+
+export const signupDark = () => {
+  return <Signup className="signup-textfields" theme={'dark'} />;
+};

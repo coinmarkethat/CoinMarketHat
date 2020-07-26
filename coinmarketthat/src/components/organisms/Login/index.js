@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 
 import { LabelTextInput } from '../../molecules';
 import { Div, H3, Label, Anchor, Button } from '../../atoms';
-import './styles.css';
-
-const theme = 'white';
+import './styles.scss';
 
 class index extends Component {
   constructor(props) {
@@ -17,13 +15,14 @@ class index extends Component {
 
   render() {
     const { email, password } = this.state;
+    const { theme } = this.props;
     return (
       <Div theme={theme} className="organism-login-div">
         <H3>Sign In</H3>
         <Label>
-          Dont Have an Account ? <Anchor link="">Create Account </Anchor>
+          Dont Have an Account ? <Anchor link="">Create Account</Anchor>
         </Label>
-        <Div theme={theme} className="organism-login-div col-md-4 mt-5">
+        <Div theme={theme} className="col-md-4 mt-5">
           <LabelTextInput
             theme={theme}
             type="input"
@@ -53,7 +52,7 @@ class index extends Component {
           >
             Sign In
           </Button>
-          <Div onClick={console.log('Forgot')} className="mt-5">
+          <Div onClick={console.log('Forgot')} className={theme}>
             Forgot Password ?
           </Div>
         </Div>

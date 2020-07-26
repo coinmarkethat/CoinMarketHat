@@ -1,10 +1,8 @@
 import React from 'react';
 
 import { LabelTextInput } from '../../molecules';
-import { Div, H3, Label, Anchor, Button } from '../../atoms';
-import './styles.css';
-
-const theme = 'white';
+import { Div, H3, Label, Button } from '../../atoms';
+import './styles.scss';
 
 class Reset extends React.Component {
   constructor(props) {
@@ -16,12 +14,13 @@ class Reset extends React.Component {
   }
 
   render() {
-    const { password, confrimPassword } = this.state;
+    const { password, confirmPassword } = this.state;
+    const { theme } = this.props;
     return (
       <Div theme={theme} className="organism-reset-div">
         <H3>Reset Password</H3>
         <Label>Enter new password for your account</Label>
-        <Div theme={theme} className="organism-login-div col-md-4 mt-5">
+        <Div theme={theme} className="col-md-4 mt-5">
           <LabelTextInput
             theme={theme}
             type="password"
@@ -36,12 +35,12 @@ class Reset extends React.Component {
           <LabelTextInput
             theme={theme}
             type="password"
-            placeholder="Confrim new Password"
-            value={confrimPassword}
+            placeholder="Confirm new Password"
+            value={confirmPassword}
             onChange={(text) => {
               return this.setState({ confrimPassword: text.target.value });
             }}
-            labelTitle="Confrim new Password"
+            labelTitle="Confirm new Password"
           />
           <Button
             className="mt-5"

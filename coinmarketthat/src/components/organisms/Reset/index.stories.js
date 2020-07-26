@@ -5,6 +5,10 @@ export default {
   title: 'organism',
 };
 
-export const reset = () => {
-  return <Reset />;
+export const resetWhite = () => {
+  return <Reset theme="white" />;
+};
+
+export const resetDark = () => {
+  return <Reset theme="dark" />;
 };
