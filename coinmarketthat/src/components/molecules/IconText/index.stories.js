@@ -9,7 +9,7 @@ storiesOf('molecule/icontext').add('IconText', () => {
     <IconText
       iconName="Star"
       textTitle="Moonlist"
-      color="white"
+      color="black"
       type="link"
       onClick={action('click icon text')}
     />
