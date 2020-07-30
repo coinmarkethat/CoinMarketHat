@@ -8,12 +8,18 @@
     margin: auto;
   }
 
-  .hr-line {
+  .atom-hr-line {
     width: 500px;
   }
 
   .btn:active {
     outline: none;
     border: none;
+  }
+
+  .btn-danger{
+    background:none;
+    color:#dc3545;
+    border:none;
   }
 }

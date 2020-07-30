@@ -4,6 +4,12 @@
   border: 1px solid #bebebe;
   box-sizing: border-box;
   border-radius: 4px;
+  color:#fff;
+}
+
+.atom-input-dark:focus{
+  background:#000;
+  color:#fff;
 }
 
 .atom-input-white {
