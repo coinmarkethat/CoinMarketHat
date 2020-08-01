@@ -4,15 +4,15 @@ import { Row, Col } from 'react-bootstrap';
 import { Label, Image, HR, Div, Button } from '../../atoms';
 import './styles.scss';
 
-const MoonCardList = ({ title, src, type, onClick, btnTitle }) => {
+const MoonCardList = ({ theme, title, src, type, onClick, btnTitle }) => {
   return (
-    <Div className="molecule-moon-list">
+    <Div theme={theme} className="molecule-moonlist-wrapper">
       <Row>
         <Col md={2}>
-          <Image src={src} className="align-center" />
+          <Image src={src} />
         </Col>
         <Col md={5}>
-          <Label className="font-weight-bold">{title}</Label>
+          <Label>{title}</Label>
         </Col>
         <Col md={5}>
           <Button

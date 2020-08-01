@@ -6,42 +6,44 @@ import MoonCardList from '.';
 import { LiteCoin, LogoBitcoin, Master, Steller } from '../../../assets';
 
 storiesOf('molecule/mooncardlist')
-  .add('MoonCardList-LiteCoin', () => (
+  .add('MoonCardList-LiteCoin-dark', () => (
     <MoonCardList
+      theme="dark"
       title={'LiteCoin'}
       src={LiteCoin}
-      border={true}
       type={'link'}
       btnTitle={'ADD'}
       onClick={action('LiteCoin Add')}
     />
   ))
-  .add('MoonCardList-LogoBitcoin', () => (
+
+  .add('MoonCardList-LogoBitcoin-dark', () => (
     <MoonCardList
+      theme="dark"
       title={'LogoBitcoin'}
       src={LogoBitcoin}
-      border={true}
       type={'danger'}
       btnTitle={'REMOVE'}
       onClick={action('LogoBitcoin Remove')}
     />
   ))
 
-  .add('MoonCardList-Master', () => (
+  .add('MoonCardList-Master-white', () => (
     <MoonCardList
+      theme="white"
       title={'Master'}
       src={Master}
-      border={true}
       type={'link'}
       btnTitle={'ADD'}
       onClick={action('MoonCardList Add')}
     />
   ))
-  .add('MoonCardList-Steller', () => (
+
+  .add('MoonCardList-Steller-white', () => (
     <MoonCardList
+      theme="white"
       title={'Steller'}
       src={Steller}
-      border={true}
       type={'danger'}
       btnTitle={'REMOVE'}
       onClick={action('MoonCardList Remove')}

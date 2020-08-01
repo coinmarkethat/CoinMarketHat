@@ -1,14 +1,16 @@
-.molecule-moon-list {
+.molecule-moonlist-wrapper {
   .row {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* border-bottom: 2px solid gray; */
     width: 500px;
     margin: auto;
   }
-
-  .atom-hr-line {
+  .atom-image {
+    height: 35px;
+    width: 35px;
+  }
+  .atom-hr {
     width: 500px;
   }
 
@@ -17,9 +19,26 @@
     border: none;
   }
 
-  .btn-danger{
-    background:none;
-    color:#dc3545;
-    border:none;
+  .btn-danger {
+    background: none;
+    color: #dc3545;
+    border: none;
+  }
+  .btn-danger:active,
+.btn-danger:focus{
+   background:none;
+}
+  .atom-label {
+    margin: 0px;
+  }
+}
+.dark-theme.molecule-moonlist-wrapper {
+  background: #1e1e1e;
+
+  .atom-label {
+    color: #fff;
+  }
+  .atom-hr {
+    color: 1px solid #121212;
   }
 }
