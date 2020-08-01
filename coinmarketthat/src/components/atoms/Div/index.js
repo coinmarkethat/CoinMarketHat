@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-const Div = ({ children, theme, className = '', onClick }) => {
+const Div = ({ children, theme, className, onClick }) => {
   let setTheme;
   switch (theme) {
     case 'dark':

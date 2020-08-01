@@ -1,19 +1,27 @@
-.red {
+.atom-p {
+  color: #666666;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.33px;
+}
+
+.atom-p-red {
   color: red;
 }
 
-.black {
+.atom-p-black {
   color: black;
 }
 
-.green {
+.atom-p-green {
   color: #2eaf71;
 }
 
-.gray {
+.atom-p-gray {
   color: dimgray;
 }
 
-.blue {
+.atom-p-blue {
   color: #0c2dc8;
 }
