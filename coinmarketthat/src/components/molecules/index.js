@@ -5,6 +5,7 @@ import SearchBox from './SearchBox';
 import ClickableIcon from './ClickableIcon';
 import AddMoonCardlist from './AddMoonCardlist';
 import SubscribeInput from './SubscribeInput';
+import SummaryHeader from './SummaryHeader';
 
 export {
   FilterList,
@@ -13,5 +14,6 @@ export {
   SearchBox,
   ClickableIcon,
   AddMoonCardlist,
-  SubscribeInput
+  SubscribeInput,
+  SummaryHeader,
 };
