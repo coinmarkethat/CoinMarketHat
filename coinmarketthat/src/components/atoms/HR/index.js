@@ -2,8 +2,8 @@ import React from 'react';
 
 import './style.css';
 
-const HR = ({ children }) => {
-  return <hr className="atom-hr-line">{children}</hr>;
+const HR = ({ className }) => {
+  return <hr className={'atom-hr' + ' ' + className} />;
 };
 
 export default HR;
