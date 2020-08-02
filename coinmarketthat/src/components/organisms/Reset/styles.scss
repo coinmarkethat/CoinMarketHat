@@ -1,4 +1,4 @@
-.organism-reset-div {
+.organism-reset-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,13 +20,11 @@
   }
 }
 
-.dark-theme.organism-reset-div {
+.dark-theme.organism-reset-wrapper {
   h3{
     color:#ffffff;
   }
-  .molecule-container-textinput-label {
-    .atom-label {
-      color: #ffffff;
-    }
+  .atom-label {
+    color: #ffffff;
   }
 }
