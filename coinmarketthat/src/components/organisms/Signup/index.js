@@ -17,10 +17,10 @@ class Signup extends React.Component {
     const { email, password } = this.state;
     const { theme } = this.props;
     return (
-      <Div theme={theme} className="organism-signup-div">
+      <Div theme={theme} className="organism-signup-wrapper">
         <H3>Sign Up</H3>
         <Label>
-          Already have an account ? <Anchor link="">Sign in</Anchor>
+          Already have an account ? <Anchor link=""> Sign in </Anchor>
         </Label>
         <Div theme={theme} className="col-md-4 mt-5">
           <LabelTextInput

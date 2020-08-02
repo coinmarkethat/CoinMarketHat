@@ -1,33 +1,31 @@
-.organism-signup-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.organism-signup-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    h3{
-        color:#101010;
-    }
+  h3 {
+    color: #101010;
+  }
 
-    div label:last-child{
-        margin-top:32px;
-        width: inherit;
-        text-align: center;
-    }
+  div label:last-child {
+    margin-top: 32px;
+    width: inherit;
+    text-align: center;
+  }
 
-    .molecule-container-textinput-label{
-        .atom-label{
-            color:#2A53D5;
-        }
+  .molecule-container-textinput-label {
+    .atom-label {
+      color: #2a53d5;
     }
+  }
 }
-  
-.dark-theme.organism-signup-div {
-    h3{
-        color:#ffffff;
-    }
-    .molecule-container-textinput-label{
-        .atom-label{
-            color:#ffffff;
-        }
-    }
+
+.dark-theme.organism-signup-wrapper {
+  h3 {
+    color: #ffffff;
+  }
+  .atom-label {
+    color: #ffffff;
+  }
 }

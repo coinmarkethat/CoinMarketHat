@@ -17,10 +17,10 @@ class index extends Component {
     const { email, password } = this.state;
     const { theme } = this.props;
     return (
-      <Div theme={theme} className="organism-login-div">
+      <Div theme={theme} className="organism-login-wrapper">
         <H3>Sign In</H3>
         <Label>
-          Dont Have an Account ? <Anchor link="">Create Account</Anchor>
+          Dont Have an Account ?<Anchor link=""> Create Account </Anchor>
         </Label>
         <Div theme={theme} className="col-md-4 mt-5">
           <LabelTextInput

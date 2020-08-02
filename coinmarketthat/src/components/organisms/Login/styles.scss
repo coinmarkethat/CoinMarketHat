@@ -1,4 +1,4 @@
-.organism-login-div {
+.organism-login-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,30 +9,27 @@
     width: inherit;
     text-align: center;
   }
-  div.no-theme.dark{
-    text-align:center;
-    color:#FFFFFF;
-    margin-top:20px;
+  div.no-theme.dark {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
   }
-  div.no-theme.white{
-    text-align:center;
-    color:#000;
-    margin-top:20px;
+  div.no-theme.white {
+    text-align: center;
+    color: #000;
+    margin-top: 20px;
   }
   .molecule-container-textinput-label {
     .atom-label {
       color: #2a53d5;
     }
-    
   }
 }
-.dark-theme.organism-login-div {
-  .molecule-container-textinput-label {
-    .atom-label {
-      color: #FFFFFF;
-    }
+.dark-theme.organism-login-wrapper {
+  h3 {
+    color: #ffffff;
   }
-  h3{
-    color:#ffffff;
+  .atom-label {
+    color: #ffffff;
   }
 }

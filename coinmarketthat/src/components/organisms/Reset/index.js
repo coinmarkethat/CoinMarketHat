@@ -17,7 +17,7 @@ class Reset extends React.Component {
     const { password, confirmPassword } = this.state;
     const { theme } = this.props;
     return (
-      <Div theme={theme} className="organism-reset-div">
+      <Div theme={theme} className="organism-reset-wrapper">
         <H3>Reset Password</H3>
         <Label>Enter new password for your account</Label>
         <Div theme={theme} className="col-md-4 mt-5">
