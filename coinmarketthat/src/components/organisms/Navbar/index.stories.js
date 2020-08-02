@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './index';
 
 export default {
-  title: 'organism'
+  title: 'organism',
 };
 
 export const navbarWhite = () => {

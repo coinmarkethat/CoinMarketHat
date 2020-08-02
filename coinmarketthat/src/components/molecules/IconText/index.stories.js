@@ -4,14 +4,37 @@ import { action } from '@storybook/addon-actions';
 
 import IconText from './index';
 
-storiesOf('molecule/icontext').add('IconText', () => {
-  return (
+storiesOf('molecule/icontext')
+  .add('IconText-Cryptocurrencies', () => (
     <IconText
-      iconName="Star"
-      textTitle="Moonlist"
+      theme="white"
+      iconName="Hamburger"
+      textTitle="Cryptocurrencies"
       color="black"
-      type="link"
+      iconHeight={15}
+      iconWidth={15}
       onClick={action('click icon text')}
     />
-  );
-});
+  ))
+  .add('IconText-Exchange', () => (
+    <IconText
+      theme="white"
+      iconName="Hamburger"
+      textTitle="Exchange"
+      color="black"
+      iconHeight={15}
+      iconWidth={15}
+      onClick={action('click icon text')}
+    />
+  ))
+  .add('IconText-filter', () => (
+    <IconText
+      theme="white"
+      iconName="Filter"
+      textTitle="Filter"
+      color="black"
+      iconHeight={15}
+      iconWidth={15}
+      onClick={action('click icon text')}
+    />
+  ));
