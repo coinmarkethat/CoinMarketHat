@@ -1,19 +1,25 @@
 import React from 'react';
-import { Row, Container } from 'react-bootstrap';
+import { Row, Container,Col } from 'react-bootstrap';
 
-import { Label, Icon, Div } from '../../atoms';
-import './styles.css';
+import { Label, Icon, Div, HR } from '../../atoms';
+import './styles.scss';
 
 const FilterList = ({ title, icon, onClick }) => {
   return (
-    <Container>
-      <Row className="molecule-filter-list border-line">
-        <Label>{title}</Label>
-        <Div theme="white" onClick={onClick && onClick}>
-          <Icon name={icon} />
+    <Div className={'molecule-filterlist-wrapper'}>
+        
+        <Row>
+          
+       <Col md={10}><Label>{title}</Label></Col>
+        <Col md={2}>
+        <Div onClick={onClick && onClick}>
+          <Icon name={icon}  />
         </Div>
-      </Row>
-    </Container>
+        </Col>
+        </Row>
+        <Row><Col md={12}><HR/></Col></Row>
+        
+    </Div>
   );
 };
 

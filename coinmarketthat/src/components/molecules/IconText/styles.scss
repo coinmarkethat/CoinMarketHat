@@ -1,7 +1,28 @@
-.molecule-text-style {
-  color: #ffffff;
+.molecules-icontext-wrapper {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13.33px;
+  display: flex;
+  border:1px solid #0c2dc8;
+  border-radius:4px;
+  background-color:#fff;
+
+  .atom-label {
+    color: #0c2dc8;
+    margin:0px 0px 0px 10px;
+  }
+}
+.molecules-icontext-wrapper:hover{
+  text-decoration: none;
+  background-color:#fff;
+}
+.molecules-icontext-wrapper:active,
+.molecules-icontext-wrapper:focus{
+  border:1px solid #0c2dc8 !important;
+  border-radius: 4pxs;
+  text-decoration: none;
+}
+.dark-theme.molecules-icontext-wrapper {
+  background-color: blue;
 }
