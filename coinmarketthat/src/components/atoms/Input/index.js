@@ -14,7 +14,6 @@ const Input = ({ type, placeholder, value, onChange, theme }) => {
       setMode = 'atom-input-white';
       break;
     default:
-      setMode = 'atom-default';
       break;
   }
   return (
