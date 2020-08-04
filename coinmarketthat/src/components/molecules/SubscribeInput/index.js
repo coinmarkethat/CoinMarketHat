@@ -12,7 +12,7 @@ const SubscribeInput = ({
   theme,
   btnTitle,
   onClick,
-  className,
+  className
 }) => {
   return (
     <Container>

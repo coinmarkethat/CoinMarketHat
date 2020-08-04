@@ -23,8 +23,8 @@ const IconText = ({
       >
         <Icon
           name={iconName}
-          color={color}
           height={iconHeight}
+          color={color}
           width={iconWidth}
         />
         <Label>{textTitle}</Label>

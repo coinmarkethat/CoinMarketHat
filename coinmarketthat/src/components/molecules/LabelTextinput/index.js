@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 
 import { Input, Label } from '../../atoms';
-import './styles.css';
+import './styles.scss';
 
 const LabelTextInput = ({
   theme,
@@ -12,10 +12,9 @@ const LabelTextInput = ({
   value,
   onChange,
   labelTitle,
-  className
 }) => {
   return (
-    <Container className={'molecule-container-textinput-label' + ' ' + className}>
+    <Container className={'molecule-textinput-label-wrapper'}>
       <Row>
         <Label>{labelTitle}</Label>
         <Input
@@ -26,6 +25,7 @@ const LabelTextInput = ({
           onChange={onChange}
           value={value}
         />
+        <Label>HIDE</Label>
       </Row>
     </Container>
   );

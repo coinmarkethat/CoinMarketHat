@@ -7,10 +7,11 @@ import SubscribeInput from './index';
 storiesOf('molecule/SubscribeInput').add('SubscribeInput', () => {
   return (
     <SubscribeInput
+      theme="white"
       type="primary"
+      placeholder="Email Address"
       onClick={action('Click me')}
       btnTitle="Subscribe"
-      placeholder={'Subscribe'}
     />
   );
 });

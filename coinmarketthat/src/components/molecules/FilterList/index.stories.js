@@ -12,6 +12,7 @@ storiesOf('molecule/filterList').add('FilterList', () => {
       border
       onClick={action('plus clicked')}
       type="link"
+      color="#858585"
     />
   );
 });

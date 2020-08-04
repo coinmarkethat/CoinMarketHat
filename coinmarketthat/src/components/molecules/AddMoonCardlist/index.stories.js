@@ -16,7 +16,6 @@ storiesOf('molecule/mooncardlist')
       onClick={action('LiteCoin Add')}
     />
   ))
-
   .add('MoonCardList-LogoBitcoin-dark', () => (
     <MoonCardList
       theme="dark"
@@ -38,7 +37,6 @@ storiesOf('molecule/mooncardlist')
       onClick={action('MoonCardList Add')}
     />
   ))
-
   .add('MoonCardList-Steller-white', () => (
     <MoonCardList
       theme="white"
