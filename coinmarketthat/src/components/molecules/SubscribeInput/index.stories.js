@@ -10,6 +10,7 @@ storiesOf('molecule/SubscribeInput').add('SubscribeInput', () => {
       type="primary"
       onClick={action('Click me')}
       btnTitle="Subscribe"
+      placeholder={'Subscribe'}
     />
   );
 });

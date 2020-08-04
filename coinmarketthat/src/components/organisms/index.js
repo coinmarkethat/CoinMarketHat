@@ -6,5 +6,16 @@ import AdBanner from './AdBanner';
 import Cards from './Cards';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import CryptoCurrencyTable from './CryptoCurrencyTable';
 
-export { Signup, Login, Forgot, Reset, AdBanner, Cards, Navbar, Footer };
+export {
+  Signup,
+  Login,
+  Forgot,
+  Reset,
+  AdBanner,
+  Cards,
+  Navbar,
+  Footer,
+  CryptoCurrencyTable,
+};
