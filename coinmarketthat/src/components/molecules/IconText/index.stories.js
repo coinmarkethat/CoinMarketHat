@@ -11,8 +11,8 @@ storiesOf('molecule/icontext')
       iconName="Hamburger"
       textTitle="Cryptocurrencies"
       color="black"
-      iconHeight={15}
-      iconWidth={15}
+      iconHeight={25}
+      iconWidth={25}
       onClick={action('click icon text')}
     />
   ))
@@ -22,8 +22,8 @@ storiesOf('molecule/icontext')
       iconName="Hamburger"
       textTitle="Exchange"
       color="black"
-      iconHeight={15}
-      iconWidth={15}
+      iconHeight={50}
+      iconWidth={50}
       onClick={action('click icon text')}
     />
   ))

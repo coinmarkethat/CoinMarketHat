@@ -5,6 +5,7 @@ import SearchBox from './index';
 
 storiesOf('molecule/searchbox').add('Search-box', (state, setState) => (
   <SearchBox
+    theme="white"
     type="input"
     placeholder="Search Currencies"
     text="Please input some text here."
