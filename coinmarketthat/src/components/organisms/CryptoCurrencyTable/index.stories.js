@@ -2,7 +2,7 @@ import React from 'react';
 import CryptoCurrencyTable from './index';
 
 export default {
-  title: 'organism',
+  title: 'organism'
 };
 
 export const tableListWhite = () => {

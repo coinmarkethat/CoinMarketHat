@@ -1,0 +1,68 @@
+.molecules-moonlistCard-wrapper {
+  box-sizing: border-box;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(102, 102, 102, 0.16);
+  border-radius: 4px;
+  margin: 0 16px;
+
+  .top-row {
+    justify-content: flex-end;
+    .atom-p {
+      background-color: #0C2DC8;
+      padding: 4px 8px;
+      color: #FFFFFF;
+    }
+  }
+
+  .dark-label {
+    color: #D0D0D0;
+  }
+
+  .white-label {
+    color: #121212;
+  }
+
+  .molecules-market-cap {
+    border-right: 2px solid #E0E0E0;
+
+    .atom-label {
+      color: #D0D0D0; 
+    }
+  }
+
+  .molecules-bitcoin-percent-row {
+    justify-content: space-between;
+
+    .molecules-percent-text {
+      color: #0A5E36;
+    }
+  }
+
+  .molecules-price-label {
+    color: #D0D0D0;
+    font-weight: 500;
+  }
+
+  .molecules-dot-separator {
+    color: #C4C4C4;
+  }
+
+  .molecules-btc-text {
+    color: #858585;
+    margin: 0;
+  }
+
+  .molecules-value-column {
+    .molecules-value-label {
+      color: #D0D0D0; 
+    }
+
+    .molecules-add-btc-label {
+      color: #46CCFF;
+    }
+  }
+}
+
+.molecules-moonlistCard-dark {
+  background-color: #1E1E1E;
+}

@@ -3,9 +3,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  //height: 100vh;
+  > div:first-child {
+    width: 100%;
+    div:last-child {
+      .atom-image {
+        float: right;
+      }
+    }
+  }
 
-  h3{
-    color:#101010;
+  //For showing the hide and show button
+  > div {
+    div:nth-child(3),
+    div:first-child {
+      div {
+        label:last-child {
+          display: block;
+        }
+      }
+    }
+  }
+  //-----------------------------------//
+
+  h3 {
+    margin-top: 50px;
   }
   div label:last-child {
     margin-top: 32px;
@@ -18,11 +40,18 @@
       color: #2a53d5;
     }
   }
+
+  .atom-image {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    top: 12px;
+  }
 }
 
 .dark-theme.organism-reset-wrapper {
-  h3{
-    color:#ffffff;
+  h3 {
+    color: #ffffff;
   }
   .atom-label {
     color: #ffffff;

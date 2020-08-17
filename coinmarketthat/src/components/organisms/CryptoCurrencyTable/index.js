@@ -2,7 +2,9 @@ import React from 'react';
 
 import CustomTable from '../../atoms/CustomTable';
 import Icon from '../../atoms/Icon';
-import IconText from '../../molecules/IconText';
+import { CurrencyIconText } from '../../molecules';
+import { LogoBitcoin, LiteCoin, Master, Steller } from '../../../assets';
+
 import './styles.scss';
 
 const tableHeaders = [
@@ -51,13 +53,19 @@ const tableHeaders = [
     name: 'Github Activity(7days)',
     key: 'githubActivity',
   },
+  {
+    id: 8,
+    name: '',
+    key: 'remarks',
+  },
 ];
 
 const tableData = [
   {
     id: 1,
     data: {
-      bitcoin: 'Bit Coin',
+      coin: 'Bit Coin',
+      image: LogoBitcoin,
       tagName: 'BTC',
       price: '$23532535',
       change: '0.74%',
@@ -70,7 +78,50 @@ const tableData = [
   {
     id: 2,
     data: {
-      bitcoin: 'Meat Coin',
+      coin: 'Ethereum',
+      image: LiteCoin,
+      tagName: 'BTC',
+      price: '$6463294',
+      change: '0.53%',
+      volume: '$9309483405',
+      circulatingSupply: '2987347 BTC',
+      marketCap: '$93493402',
+      githubActivity: '',
+    },
+  },
+  {
+    id: 3,
+    data: {
+      coin: 'XRP',
+      image: Master,
+      tagName: 'BTC',
+      price: '$6463294',
+      change: '0.53%',
+      volume: '$9309483405',
+      circulatingSupply: '2987347 BTC',
+      marketCap: '$93493402',
+      githubActivity: '',
+    },
+  },
+  {
+    id: 4,
+    data: {
+      coin: 'Tether',
+      image: Steller,
+      tagName: 'BTC',
+      price: '$6463294',
+      change: '0.53%',
+      volume: '$9309483405',
+      circulatingSupply: '2987347 BTC',
+      marketCap: '$93493402',
+      githubActivity: '',
+    },
+  },
+  {
+    id: 5,
+    data: {
+      coin: 'Bitcoin Cash',
+      image: LogoBitcoin,
       tagName: 'BTC',
       price: '$6463294',
       change: '0.53%',
@@ -89,30 +140,41 @@ class CryptoCurrencyTable extends React.Component {
   }
 
   render() {
+    const { theme } = this.props;
     return (
-      <CustomTable className="organism-cryptotable-wrapper">
-        <tr>
+      <CustomTable className={'organism-table-container'}>
+        <tr className={theme === 'dark' && 'organism-dark-table-row'}>
           {tableHeaders.map((item) => {
             return <td key={item.id}>{item.name}</td>;
           })}
         </tr>
         {tableData.map((item, index) => {
           return (
-            <tr>
+            <tr
+              className={
+                theme === 'dark'
+                  ? index % 2 === 0
+                    ? 'organism-dark-table-row1'
+                    : 'organism-dark-table-row'
+                  : null
+              }
+            >
               <td>
-                <Icon name="Star" />
-              </td>
-              <td>
-                <IconText
-                  iconName="Star"
-                  textTitle={item.data.bitcoin}
-                  color="black"
-                  labelClassName=""
+                <Icon
+                  name="Star"
+                  color={theme === 'dark' ? '#858585' : '#000000'}
                 />
               </td>
-              <td>{item.data.tagName}</td>
+              <td>
+                <CurrencyIconText
+                  theme={theme}
+                  source={item.data.image}
+                  textTitle={item.data.coin}
+                />
+              </td>
+              <td style={{ color: '#858585' }}>{item.data.tagName}</td>
               <td>{item.data.price}</td>
-              <td>{item.data.change}</td>
+              <td style={{ color: '#2eaf71' }}>{item.data.change}</td>
               <td>{item.data.volume}</td>
               <td>{item.data.circulatingSupply}</td>
               <td>{item.data.marketCap}</td>

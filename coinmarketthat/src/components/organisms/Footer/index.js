@@ -3,7 +3,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 import { Paragraph, Div, Button, HR } from '../../atoms';
-import './styles.scss';
+import './style.scss';
 import SubscribeInput from '../../molecules/SubscribeInput';
 
 const Footer = ({ theme }) => {

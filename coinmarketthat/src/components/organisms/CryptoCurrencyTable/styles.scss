@@ -1,11 +1,26 @@
-.organism-cryptotable-wrapper {
-  .molecules-icontext-wrapper {
+.organism-table-container {
+  .organism-crypto-table {
     color: #000000;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13.33px;
     margin-left: 8px;
-    border: none;
+  }
+  .molecules-icontext-wrapper {
+    border: 1px solid #d6d6d4;
+  }
+  .organism-dark-table-row {
+    background-color: #000000;
+  }
+
+  .organism-dark-table-row1 {
+    background-color: #1e1e1e;
+  }
+}
+.organism-dark-table-row,
+.organism-dark-table-row1 {
+  td {
+    color: #fff;
   }
 }

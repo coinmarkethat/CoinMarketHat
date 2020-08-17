@@ -4,26 +4,43 @@
   font-weight: 500;
   font-size: 13.33px;
   display: flex;
-  border:1px solid #0c2dc8;
-  border-radius:4px;
-  background-color:#fff;
-  display:block;
+  border: 1px solid #0c2dc8;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: inline-flex;
 
   .atom-label {
+    color: #d0d0d0;
+    margin: 2px 0px 0px 10px;
+  }
+  .atom-label-select {
     color: #0c2dc8;
-    margin:2px 0px 0px 10px;
+    margin: 2px 0px 0px 10px;
   }
 }
-.molecules-icontext-wrapper:hover{
+.molecules-icontext-wrapper:hover {
   text-decoration: none;
-  background-color:#fff;
+  background-color: #fff;
 }
 .molecules-icontext-wrapper:active,
-.molecules-icontext-wrapper:focus{
-  border:1px solid #0c2dc8 !important;
+.molecules-icontext-wrapper:focus {
+  border: 1px solid #0c2dc8 !important;
   border-radius: 4pxs;
   text-decoration: none;
 }
 .dark-theme.molecules-icontext-wrapper {
   background-color: blue;
+}
+
+.dark-theme {
+  .molecules-icontext-wrapper {
+    border: 1px solid #bebebe;
+    background: #000;
+    .atom-label {
+      color: #d0d0d0;
+    }
+    .atom-label-select {
+      color: #0c2dc8;
+    }
+  }
 }

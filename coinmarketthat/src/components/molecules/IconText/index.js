@@ -12,6 +12,7 @@ const IconText = ({
   textTitle,
   iconHeight,
   iconWidth,
+  isSelect,
 }) => {
   return (
     <>
@@ -27,7 +28,10 @@ const IconText = ({
           color={color}
           width={iconWidth}
         />
-        <Label>{textTitle}</Label>
+
+        <Label className={isSelect ? 'atom-label-select' : 'atom-label'}>
+          {textTitle}
+        </Label>
       </Button>
     </>
   );
