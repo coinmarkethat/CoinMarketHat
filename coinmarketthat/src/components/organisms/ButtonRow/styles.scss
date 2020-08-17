@@ -1,0 +1,24 @@
+.organism-button-row {
+    .row{
+        .col-md-8{
+            display: flex;
+            justify-content: flex-end;
+            button:last-child{
+                margin-right:10px;
+            }
+        }
+        .col-md-4{
+            button:first-child{
+                margin-left:10px;
+            }
+        }
+    }
+  }
+  
+  .organism-button-row .molecules-icontext-wrapper {
+    margin-right: 16px;
+  }
+  
+  .organism-button-row .molecules-searchbox-wrapper {
+    margin-right: 16px;
+  }

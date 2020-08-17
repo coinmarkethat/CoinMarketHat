@@ -1,0 +1,19 @@
+.molecules-currencyicontext-container {
+  background: transparent;
+  .atom-label {
+    color: #000000;
+    margin: 2px 0px 0px 10px;
+  }
+
+  .atom-image {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.dark-theme.molecules-currencyicontext-container {
+  .atom-label {
+    color: #ffffff;
+    margin: 2px 0px 0px 10px;
+  }
+}

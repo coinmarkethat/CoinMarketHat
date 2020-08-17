@@ -6,9 +6,9 @@ import SummaryHeader from './index';
 storiesOf('molecule/SummaryHeader').add('SummaryHeader', () => {
   return (
     <SummaryHeader
-      crptocurrenciesValue="5,563"
-      MarketValue="545,563"
-      Volume="$678,445,563"
+      cryptocurrenciesValue="5,563"
+      marketValue="545,563"
+      volume="$678,445,563"
       btcDominance="64.8%"
       marketCap="$5,454,563"
     />

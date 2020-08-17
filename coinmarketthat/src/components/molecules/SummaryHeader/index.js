@@ -4,18 +4,38 @@ import { Label, Div } from '../../atoms';
 import './styles.scss';
 
 const SummaryHeader = ({
-  crptocurrenciesValue,
-  MarketValue,
-  Volume,
+  cryptocurrenciesValue,
+  marketValue,
+  volume,
   btcDominance,
-  marketCap,
+  marketCap
 }) => {
   return (
     <Div className="molecule-summary-header-wrapper">
-      <Label>Cryptocurrencies: {crptocurrenciesValue} </Label>|
-      <Label>Market:{MarketValue} </Label>|
-      <Label>Market Cap: {marketCap} </Label>|<Label>Vol: {Volume} </Label>|
-      <Label>BTC Dominance: {btcDominance} </Label>
+      <Label>
+        Cryptocurrencies:
+        {cryptocurrenciesValue}
+      </Label>
+      |
+      <Label>
+        Market:
+        {marketValue}
+      </Label>
+      |
+      <Label>
+        Market Cap:
+        {marketCap}
+      </Label>
+      |
+      <Label>
+        Vol:
+        {volume}
+      </Label>
+      |
+      <Label>
+        BTC Dominance:
+        {btcDominance}
+      </Label>
     </Div>
   );
 };

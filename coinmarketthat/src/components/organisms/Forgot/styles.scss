@@ -1,20 +1,35 @@
-.organism-forgot-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h3{
-        color:#101010;
-    }
-    label{
-        text-align: center;
-        color:#858585;
-    }
-}
-  
-.dark-theme.organism-forgot-div {
-    h3{
-        color:#ffffff;
+.organism-forgot-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //height: 100vh;
+  > div:first-child {
+    width: 100%;
+    div:last-child {
+      .atom-image {
+        float: right;
       }
+    }
+  }
+  h3 {
+    margin-top: 50px;
+  }
+  label {
+    text-align: center;
+    color: #858585;
+  }
+
+  .atom-image {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    top: 12px;
+  }
+}
+
+.dark-theme.organism-forgot-wrapper {
+  h3 {
+    color: #ffffff;
+  }
 }

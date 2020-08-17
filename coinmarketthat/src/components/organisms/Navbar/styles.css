@@ -27,21 +27,25 @@
   color: #ffffff !important;
 }
 
-.organism-navbar-button {
+.organism-navbar .molecules-icontext-wrapper {
   display: flex;
   flex-direction: row;
   background-color: #0C2DC8;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 4px 16px;
   margin-right: 16px;
 }
 
-.organism-navbar-button-label {
+.organism-navbar .atom-label {
   margin: 0px 0px 0px 8px;
+  color: #FFFFFF;
 }
 
-.organism-navbar-search {
+.organism-navbar-icons {
   margin-right: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

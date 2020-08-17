@@ -6,6 +6,8 @@ import ClickableIcon from './ClickableIcon';
 import AddMoonCardlist from './AddMoonCardlist';
 import SubscribeInput from './SubscribeInput';
 import SummaryHeader from './SummaryHeader';
+import CurrencyIconText from './CurrencyIconText';
+import AddCryptoCurrencyBox from './AddCryptoCurrencyBox';
 
 export {
   FilterList,
@@ -16,4 +18,6 @@ export {
   AddMoonCardlist,
   SubscribeInput,
   SummaryHeader,
+  CurrencyIconText,
+  AddCryptoCurrencyBox,
 };

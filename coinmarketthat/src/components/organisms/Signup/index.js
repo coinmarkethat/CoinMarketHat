@@ -1,7 +1,9 @@
 import React from 'react';
+import { Row, Col } from 'react-bootstrap';
 
 import { LabelTextInput } from '../../molecules';
-import { Div, H3, Label, Anchor, Button } from '../../atoms';
+import { Div, H3, Label, Anchor, Button, Image } from '../../atoms';
+import { Close } from '../../../assets';
 import './styles.scss';
 
 class Signup extends React.Component {
@@ -10,17 +12,31 @@ class Signup extends React.Component {
     this.state = {
       email: null,
       password: null,
+      isPasswordVisible: false,
     };
   }
 
   render() {
-    const { email, password } = this.state;
-    const { theme } = this.props;
+    const { email, password, isPasswordVisible } = this.state;
+    const { theme, history } = this.props;
     return (
       <Div theme={theme} className="organism-signup-wrapper">
+        <Row>
+          <Col md={6}>
+            <Image
+              src={
+                'https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg'
+              }
+              alt="LOGO"
+            />
+          </Col>
+          <Col md={6}>
+            <Image src={Close} alt="LOGO" />
+          </Col>
+        </Row>
         <H3>Sign Up</H3>
         <Label>
-          Already have an account ? <Anchor link=""> Sign in </Anchor>
+          Already have an account ? <Anchor link="/login"> Sign in </Anchor>
         </Label>
         <Div theme={theme} className="col-md-4 mt-5">
           <LabelTextInput
@@ -36,18 +52,22 @@ class Signup extends React.Component {
           <br />
           <LabelTextInput
             theme={theme}
-            type="password"
+            type={isPasswordVisible ? 'input' : 'password'}
             placeholder="Enter password"
             value={password}
             onChange={(text) => {
               return this.setState({ password: text.target.value });
             }}
             labelTitle="Password"
+            onClick={() =>
+              this.setState({ isPasswordVisible: !isPasswordVisible })
+            }
+            hideShowText={isPasswordVisible ? 'HIDE' : 'SHOW'}
           />
           <Button
             className="mt-5"
             type="primary"
-            onClick={console.log('Click me')}
+            onClick={() => history.push('/login')}
             block
           >
             Sign up
