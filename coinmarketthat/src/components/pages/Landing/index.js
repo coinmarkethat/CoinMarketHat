@@ -5,25 +5,25 @@ import LandingTemplate from '../../templates/Landing';
 
 class Landing extends React.Component {
   state = {
-    mode: true,
+    theme: localStorage.getItem('theme') || 'white',
   };
 
-  handleMode() {
+  handleChangeTheme = (newTheme) => {
     this.setState({
-      mode: !this.state.mode,
+      theme: newTheme,
     });
-  }
+  };
 
   render() {
-    let { mode } = this.state;
-    const { theme = mode ? 'white' : 'dark', history, ...rest } = this.props;
+    const { theme } = this.state;
+    const { history, ...rest } = this.props;
     return (
       <>
         <Navbar
           theme={theme}
           showMoonList={true}
           history={history}
-          toggleMode={this.handleMode.bind(this)}
+          toggleMode={(newTheme) => this.handleChangeTheme(newTheme)}
         />
         <LandingTemplate
           theme={theme}

@@ -2,7 +2,8 @@ import React from 'react';
 
 import { ForgotTemplate } from '../../templates';
 
-const Forgot = ({ theme, history }) => {
+const Forgot = ({ history }) => {
+  const theme = localStorage.getItem('theme') || 'white';
   return (
     <ForgotTemplate theme={theme} history={history} />
   );

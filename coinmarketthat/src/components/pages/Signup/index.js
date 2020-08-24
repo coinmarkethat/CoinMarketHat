@@ -2,7 +2,8 @@ import React from 'react';
 
 import { SignupTemplate } from '../../templates';
 
-const Signup = ({ theme, history }) => {
+const Signup = ({ history }) => {
+  const theme = localStorage.getItem('theme') || 'white';
   return (
     <SignupTemplate theme={theme} history={history} />
   );

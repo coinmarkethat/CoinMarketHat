@@ -2,7 +2,8 @@ import React from 'react';
 
 import { LoginTemplate } from '../../templates';
 
-const Login = ({ theme, history }) => {
+const Login = ({ history }) => {
+  const theme = localStorage.getItem('theme') || 'white';
   return <LoginTemplate theme={theme} history={history} />;
 };
 

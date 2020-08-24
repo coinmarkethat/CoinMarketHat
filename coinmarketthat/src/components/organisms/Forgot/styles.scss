@@ -3,9 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //height: 100vh;
+  height: 100vh;
   > div:first-child {
     width: 100%;
+    position: absolute;
+    top: 0;
     div:last-child {
       .atom-image {
         float: right;

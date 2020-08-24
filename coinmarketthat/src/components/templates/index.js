@@ -4,6 +4,7 @@ import SignupTemplate from './Signup';
 import ResetPasswordTemplate from './ResetPassword';
 import ForgotTemplate from './Forgot';
 import MoonBoardTemplate from './MoonBoard';
+import LandingDetailsTemplate from './LandingDetails';
 
 export {
   LandingTemplate,

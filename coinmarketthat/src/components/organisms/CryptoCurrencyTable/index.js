@@ -14,7 +14,7 @@ const tableHeaders = [
     name: '#',
   },
   {
-    id: 8,
+    id: 10,
     key: 'bitcoin',
     name: 'Bitcoin',
   },
@@ -143,46 +143,49 @@ class CryptoCurrencyTable extends React.Component {
     const { theme } = this.props;
     return (
       <CustomTable className={'organism-table-container'}>
-        <tr className={theme === 'dark' && 'organism-dark-table-row'}>
-          {tableHeaders.map((item) => {
-            return <td key={item.id}>{item.name}</td>;
+        <tbody>
+          <tr className={theme === 'dark' ? 'organism-dark-table-row' : ''}>
+            {tableHeaders.map((item) => {
+              return <td key={item.id}>{item.name}</td>;
+            })}
+          </tr>
+          {tableData.map((item, index) => {
+            return (
+              <tr
+                key={index}
+                className={
+                  theme === 'dark'
+                    ? index % 2 === 0
+                      ? 'organism-dark-table-row1'
+                      : 'organism-dark-table-row'
+                    : null
+                }
+              >
+                <td>
+                  <Icon
+                    name="Star"
+                    color={theme === 'dark' ? '#858585' : '#000000'}
+                  />
+                </td>
+                <td>
+                  <CurrencyIconText
+                    theme={theme}
+                    source={item.data.image}
+                    textTitle={item.data.coin}
+                  />
+                </td>
+                <td style={{ color: '#858585' }}>{item.data.tagName}</td>
+                <td>{item.data.price}</td>
+                <td style={{ color: '#2eaf71' }}>{item.data.change}</td>
+                <td>{item.data.volume}</td>
+                <td>{item.data.circulatingSupply}</td>
+                <td>{item.data.marketCap}</td>
+                <td>{item.data.githubActivity}</td>
+                <td>...</td>
+              </tr>
+            );
           })}
-        </tr>
-        {tableData.map((item, index) => {
-          return (
-            <tr
-              className={
-                theme === 'dark'
-                  ? index % 2 === 0
-                    ? 'organism-dark-table-row1'
-                    : 'organism-dark-table-row'
-                  : null
-              }
-            >
-              <td>
-                <Icon
-                  name="Star"
-                  color={theme === 'dark' ? '#858585' : '#000000'}
-                />
-              </td>
-              <td>
-                <CurrencyIconText
-                  theme={theme}
-                  source={item.data.image}
-                  textTitle={item.data.coin}
-                />
-              </td>
-              <td style={{ color: '#858585' }}>{item.data.tagName}</td>
-              <td>{item.data.price}</td>
-              <td style={{ color: '#2eaf71' }}>{item.data.change}</td>
-              <td>{item.data.volume}</td>
-              <td>{item.data.circulatingSupply}</td>
-              <td>{item.data.marketCap}</td>
-              <td>{item.data.githubActivity}</td>
-              <td>...</td>
-            </tr>
-          );
-        })}
+        </tbody>
       </CustomTable>
     );
   }

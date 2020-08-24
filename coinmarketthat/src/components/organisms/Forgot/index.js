@@ -26,10 +26,17 @@ class Forgot extends React.Component {
                 'https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg'
               }
               alt="LOGO"
+              style={{ height: '25px', width: '25px' }}
+              onClick={() => history.push('/dashboard')}
             />
           </Col>
           <Col md={6}>
-            <Image src={Close} alt="LOGO" />
+            <Image
+              src={Close}
+              alt="Close"
+              style={{ height: '20px', width: '20px' }}
+              onClick={() => history.push('/dashboard')}
+            />
           </Col>
         </Row>
         <H3>Forgot Password</H3>

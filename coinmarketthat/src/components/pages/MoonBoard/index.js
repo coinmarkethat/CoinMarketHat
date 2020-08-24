@@ -5,19 +5,18 @@ import { MoonBoardTemplate } from '../../templates';
 
 class MoonBoard extends React.Component {
   state = {
-    mode: true,
+    theme: localStorage.getItem('theme') || 'white',
   };
 
-  handleMode() {
+  handleChangeTheme = (newTheme) => {
     this.setState({
-      mode: !this.state.mode,
+      theme: newTheme,
     });
-  }
+  };
 
   render() {
-    let { mode } = this.state;
+    const { theme } = this.state;
     const {
-      theme = mode ? 'white' : 'dark',
       history,
       showMoonList,
       ...rest
@@ -28,9 +27,16 @@ class MoonBoard extends React.Component {
           theme={theme}
           showMoonList={false}
           history={history}
-          toggleMode={this.handleMode.bind(this)}
+          toggleMode={(newTheme) => this.handleChangeTheme(newTheme)}
         />
-        <MoonBoardTemplate />
+        <MoonBoardTemplate
+          theme={theme}
+          cryptocurrenciesValue="5,563"
+          marketValue="545,563"
+          volume="$678,445,563"
+          btcDominance="64.8%"
+          marketCap="$5,454,563"
+        />
         <Footer theme={theme} />
       </>
     );
@@ -38,4 +44,3 @@ class MoonBoard extends React.Component {
 }
 
 export default MoonBoard;
-

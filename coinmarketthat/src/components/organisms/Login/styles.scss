@@ -3,9 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // height: 100vh;
+  height: 100vh;
   > div:first-child {
     width: 100%;
+    position: absolute;
+    top: 0;
     div:last-child {
       .atom-image {
         float: right;
@@ -37,11 +39,13 @@
     text-align: center;
     color: #ffffff;
     margin-top: 20px;
+    cursor: pointer;
   }
   div.no-theme.white {
     text-align: center;
     color: #000;
     margin-top: 20px;
+    cursor: pointer;
   }
   .molecule-container-textinput-label {
     .atom-label {
@@ -53,6 +57,10 @@
     width: 32px;
     position: relative;
     top: 12px;
+  }
+  .organisms-login-create-account {
+    color: #2a53d5 !important;
+    cursor: pointer;
   }
 }
 .dark-theme.organism-login-wrapper {
