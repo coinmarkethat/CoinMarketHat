@@ -4,13 +4,13 @@
   font-weight: 500;
   font-size: 13.33px;
   display: flex;
-  border: 1px solid #0c2dc8;
+  border: 1px solid #bebebe;
   border-radius: 4px;
   background-color: #ffffff;
   display: inline-flex;
 
   .atom-label {
-    color: #d0d0d0;
+    color: #495057;
     margin: 2px 0px 0px 10px;
   }
   .atom-label-select {
@@ -25,8 +25,9 @@
 .molecules-icontext-wrapper:active,
 .molecules-icontext-wrapper:focus {
   border: 1px solid #0c2dc8 !important;
-  border-radius: 4pxs;
+  border-radius: 4px;
   text-decoration: none;
+  background:#fff !important;
 }
 .dark-theme.molecules-icontext-wrapper {
   background-color: blue;
@@ -42,5 +43,8 @@
     .atom-label-select {
       color: #0c2dc8;
     }
+  }
+  .molecules-icontext-wrapper:focus{
+    background:#000 !important;
   }
 }
