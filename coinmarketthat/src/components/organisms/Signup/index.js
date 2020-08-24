@@ -19,6 +19,9 @@ class Signup extends React.Component {
   render() {
     const { email, password, isPasswordVisible } = this.state;
     const { theme, history } = this.props;
+    const imageClick = () => {
+      alert('Click');
+    };
     return (
       <Div theme={theme} className="organism-signup-wrapper">
         <Row>
@@ -28,15 +31,25 @@ class Signup extends React.Component {
                 'https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg'
               }
               alt="LOGO"
+              style={{ height: '25px', width: '25px' }}
+              onClick={() => history.push('/dashboard')}
             />
           </Col>
           <Col md={6}>
-            <Image src={Close} alt="LOGO" />
+            <Image
+              src={Close}
+              alt="Close"
+              style={{ height: '20px', width: '20px' }}
+              onClick={() => history.push('/dashboard')}
+            />
           </Col>
         </Row>
         <H3>Sign Up</H3>
         <Label>
-          Already have an account ? <Anchor link="/login"> Sign in </Anchor>
+          Already have an account ?&nbsp;
+          <Label className="organisms-signup-signin-text" onClick={() => history.push('/login')}>
+            Sign in
+          </Label>
         </Label>
         <Div theme={theme} className="col-md-4 mt-5">
           <LabelTextInput

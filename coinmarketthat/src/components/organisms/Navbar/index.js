@@ -5,9 +5,20 @@ import './styles.css';
 import { ClickableIcon, IconText } from '../../molecules';
 
 const CustomNavbar = ({ theme, showMoonList, toggleMode, history }) => {
+  const handleToggleMode = () => {
+    const initialTheme = localStorage.getItem('theme') || 'white';
+    const newTheme = initialTheme === 'white' ? 'dark' : 'white';
+    localStorage.setItem('theme', newTheme);
+    toggleMode(newTheme);
+  };
+
   return (
     <Navbar className={'organism-navbar' + ' ' + 'organism-navbar-' + theme}>
-      <Navbar.Brand className={'organism-navbar-link-' + theme} href="#home">
+      <Navbar.Brand
+        className={'organism-navbar-link-' + theme}
+        href="#home"
+        onClick={() => history.push('/dashboard')}
+      >
         Logo
       </Navbar.Brand>
       <Nav className="mr-auto" onClick={() => history.push('/dashboard')}>
@@ -59,7 +70,12 @@ const CustomNavbar = ({ theme, showMoonList, toggleMode, history }) => {
             textTitle="MoonList"
             color="white"
             type="link"
-            onClick={() => history.push('/moonboard')}
+            onClick={() =>
+              history.push({
+                pathname: '/moonboard',
+                state: { themeMode: theme },
+              })
+            }
           />
         )}
 
@@ -71,7 +87,7 @@ const CustomNavbar = ({ theme, showMoonList, toggleMode, history }) => {
           color={theme === 'dark' ? '#676D81' : '#000000'}
         />
         <ClickableIcon
-          onClick={toggleMode && toggleMode}
+          onClick={() => handleToggleMode()}
           theme={theme}
           className="organism-navbar-icons"
           iconName="ToggleMode"
