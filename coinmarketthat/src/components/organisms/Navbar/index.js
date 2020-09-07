@@ -70,12 +70,7 @@ const CustomNavbar = ({ theme, showMoonList, toggleMode, history }) => {
             textTitle="MoonList"
             color="white"
             type="link"
-            onClick={() =>
-              history.push({
-                pathname: '/moonboard',
-                state: { themeMode: theme },
-              })
-            }
+            onClick={() => history.push('/moonboard')}
           />
         )}
 
