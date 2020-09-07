@@ -16,7 +16,7 @@ storiesOf('pages/MoonBoard')
       />
     );
   })
-  .add('MoonBoardWhite', () => {
+  .add('MoonBoardDark', () => {
     return (
       <MoonBoard
         theme="dark"

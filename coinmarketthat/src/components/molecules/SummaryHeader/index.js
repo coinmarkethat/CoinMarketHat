@@ -8,7 +8,7 @@ const SummaryHeader = ({
   marketValue,
   volume,
   btcDominance,
-  marketCap
+  marketCap,
 }) => {
   return (
     <Div className="molecule-summary-header-wrapper">

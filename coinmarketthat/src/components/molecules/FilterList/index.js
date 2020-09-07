@@ -1,13 +1,24 @@
 import React from 'react';
-import { Row, Container, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import { Label, Icon, Div, HR } from '../../atoms';
 import './styles.scss';
 
-const FilterList = ({ title, icon, onClick, color }) => {
+const FilterList = ({
+  theme,
+  title,
+  icon,
+  onClick,
+  color,
+  border,
+  className = '',
+}) => {
   return (
-    <Div className={'molecule-filterlist-wrapper'}>
-      <Row>
+    <Div
+      theme={theme}
+      className={'molecule-filterlist-wrapper' + ' ' + className}
+    >
+      <Row className="molecule-filterlist-row">
         <Col md={10}>
           <Label>{title}</Label>
         </Col>
@@ -17,11 +28,13 @@ const FilterList = ({ title, icon, onClick, color }) => {
           </Div>
         </Col>
       </Row>
-      <Row>
-        <Col md={12}>
-          <HR />
-        </Col>
-      </Row>
+      {border && (
+        <Row>
+          <Col md={12}>
+            <HR />
+          </Col>
+        </Row>
+      )}
     </Div>
   );
 };

@@ -1,17 +1,17 @@
 import React from 'react';
 
-import {Div, Image, Label  } from '../../atoms';
+import { Div, Image, Label } from '../../atoms';
 import './styles.scss';
 
-const CurrencyIconText = ({
-    theme,
-    source,
-    textTitle
-}) => {
+const CurrencyIconText = ({ theme, source, textTitle, onClick }) => {
   return (
-    <Div theme={theme} className="molecules-currencyicontext-container">
-        <Image src={source} />
-        <Label>{textTitle}</Label>
+    <Div
+      onClick={onClick}
+      theme={theme}
+      className="molecules-currencyicontext-container"
+    >
+      <Image src={source} />
+      <Label>{textTitle}</Label>
     </Div>
   );
 };

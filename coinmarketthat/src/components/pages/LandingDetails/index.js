@@ -15,8 +15,8 @@ class LandingDetails extends Component {
   }
 
   render() {
-    let { mode } = this.state;
-    const { theme = mode ? 'white' : 'dark', history, ...rest } = this.props;
+    const theme = localStorage.getItem('theme') || 'white';
+    const { history, ...rest } = this.props;
     return (
       <>
         <Navbar

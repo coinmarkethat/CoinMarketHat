@@ -12,22 +12,24 @@
   .atom-label {
     color: #495057;
     margin: 2px 0px 0px 10px;
+    cursor: pointer;
   }
   .atom-label-select {
     color: #0c2dc8;
     margin: 2px 0px 0px 10px;
+    cursor: pointer;
   }
 }
 .molecules-icontext-wrapper:hover {
   text-decoration: none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .molecules-icontext-wrapper:active,
 .molecules-icontext-wrapper:focus {
   border: 1px solid #0c2dc8 !important;
   border-radius: 4px;
   text-decoration: none;
-  background:#fff !important;
+  background:#ffffff !important;
 }
 .dark-theme.molecules-icontext-wrapper {
   background-color: blue;
@@ -35,7 +37,7 @@
 
 .dark-theme {
   .molecules-icontext-wrapper {
-    border: 1px solid #bebebe;
+    border: none;
     background: #000;
     .atom-label {
       color: #d0d0d0;
@@ -45,6 +47,6 @@
     }
   }
   .molecules-icontext-wrapper:focus{
-    background:#000 !important;
+    background:#000000 !important;
   }
 }

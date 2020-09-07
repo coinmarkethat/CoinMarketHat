@@ -11,14 +11,14 @@ class MoonList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isAddMoonCardModalVisible: false
+      isAddMoonCardModalVisible: false,
     };
   }
 
   handleShowHideModal = () => {
     const { isAddMoonCardModalVisible } = this.state;
     this.setState({ isAddMoonCardModalVisible: !isAddMoonCardModalVisible });
-  }
+  };
 
   render() {
     const { theme } = this.props;
@@ -30,9 +30,7 @@ class MoonList extends React.Component {
           onClick={() => this.handleShowHideModal()}
         />
         {data.map((item, index) => {
-          return (
-            <MoonlistCard theme={theme} />
-          );
+          return <MoonlistCard theme={theme} />;
         })}
         <AddMoonCardModal
           theme={theme}

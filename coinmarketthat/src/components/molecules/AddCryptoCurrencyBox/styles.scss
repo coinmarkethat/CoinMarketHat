@@ -1,17 +1,19 @@
 .molecules-addcryptoCurrency-wrapper {
-  border: 1px dashed #2460B9;
+  border: 1px dashed #2460b9;
   box-sizing: border-box;
   border-radius: 4px;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  height: 160px;
+  width: 260px;
+  margin-bottom: 16px;
 
   .addCrypto-icon-wrapper {
     width: 32px;
     height: 32px;
-    background-color: #DCE6F4 !important;
+    background-color: #dce6f4 !important;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -22,15 +24,16 @@
       line-height: 0;
       font-size: 32px;
       justify-content: center;
-      color: #2460B9;
+      color: #2460b9;
+      margin: 0;
     }
   }
 
   .dark-label {
-    color: #D0D0D0;
+    color: #d0d0d0;
   }
 
   .white-label {
-    color: #0C2DC8;
+    color: #0c2dc8;
   }
 }

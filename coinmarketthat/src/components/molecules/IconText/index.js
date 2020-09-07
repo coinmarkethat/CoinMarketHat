@@ -18,7 +18,11 @@ const IconText = ({
     <>
       <Button
         theme={theme}
-        className={'molecules-icontext-wrapper'}
+        className={
+          isSelect
+            ? 'molecules-icontext-wrapper' + ' ' + 'select'
+            : 'molecules-icontext-wrapper'
+        }
         type={type}
         onClick={onClick && onClick}
       >

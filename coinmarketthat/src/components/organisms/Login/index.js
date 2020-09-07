@@ -44,7 +44,10 @@ class Login extends Component {
         <H3>Sign In</H3>
         <Label>
           Don't Have an Account? &nbsp;
-          <Label className="organisms-login-create-account" onClick={() => history.push('/signup')}>
+          <Label
+            className="organisms-login-create-account"
+            onClick={() => history.push('/signup')}
+          >
             Create Account
           </Label>
         </Label>
