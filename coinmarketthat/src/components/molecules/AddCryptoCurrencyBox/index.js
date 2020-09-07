@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Div, Icon, Label } from '../../atoms';
+import { Div, Label } from '../../atoms';
 import './styles.scss';
 
 const AddCryptoCurrencyBox = ({ theme, onClick }) => {

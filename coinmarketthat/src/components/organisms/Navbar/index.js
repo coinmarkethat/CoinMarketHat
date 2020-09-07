@@ -65,7 +65,6 @@ const CustomNavbar = ({ theme, showMoonList, toggleMode, history }) => {
         {showMoonList && (
           <IconText
             theme={theme}
-            buttonClassName="organism-navbar-button"
             iconName="Star"
             textTitle="MoonList"
             color="white"

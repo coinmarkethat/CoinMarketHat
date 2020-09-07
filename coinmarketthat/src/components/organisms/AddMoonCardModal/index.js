@@ -40,7 +40,6 @@ const AddMoonCardModal = ({ theme, isVisible, onHideModal }) => {
           theme={theme}
           type="input"
           placeholder="Search Currencies"
-          //  value={state.value}
           onChange={(e) => console.log(e.target.value)}
           icon="Search"
           color={theme === 'dark' ? '#D0D0D0' : '#858585'}

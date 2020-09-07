@@ -13,4 +13,5 @@ export {
   ResetPasswordTemplate,
   ForgotTemplate,
   MoonBoardTemplate,
+  LandingDetailsTemplate,
 };
