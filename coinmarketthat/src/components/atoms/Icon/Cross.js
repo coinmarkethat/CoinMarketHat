@@ -2,6 +2,7 @@ import React from 'react';
 
 const Cross = (props) => (
   <svg
+    onClick={props.onClick}
     width={props.width || 24}
     height={props.height || 24}
     viewBox="0 0 32 32"

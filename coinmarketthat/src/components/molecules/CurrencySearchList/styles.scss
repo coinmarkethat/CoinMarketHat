@@ -1,0 +1,35 @@
+.molecules-currencySearchList-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D6D4D4;
+
+  .molecules-add-label {
+    color: #0C2DC8;
+    font-size: 12px;
+  }
+
+  .molecules-remove-label {
+    color: #E21F1F;
+    font-size: 12px;
+  }
+}
+
+.dark-theme {
+  // background-color: #1E1E1E;
+  // border-bottom: 1px solid #121212;
+
+  .molecules-add-label {
+    color: #46CCFF;
+  }
+
+  .molecules-remove-label {
+    color: #E21F1F;
+  }
+}
+
+.currencySearchList-no-border {
+  border-bottom: none;
+}
