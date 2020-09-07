@@ -23,5 +23,5 @@ export {
   CurrencyIconText,
   AddCryptoCurrencyBox,
   MoonlistCard,
-  CurrencySearchList
+  CurrencySearchList,
 };

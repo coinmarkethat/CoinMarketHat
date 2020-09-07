@@ -3,66 +3,112 @@
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.16);
   border: 1px solid rgba(102, 102, 102, 0.16);
   border-radius: 4px;
-  margin: 0 16px;
+  height: 160px;
+  width: 260px;
+  margin-bottom: 16px;
+
+  .atom-label {
+    margin: 0px;
+  }
 
   .top-row {
     justify-content: flex-end;
     .atom-p {
-      background-color: #0C2DC8;
+      background-color: #0c2dc8;
       padding: 4px 8px;
-      color: #FFFFFF;
+      color: #ffffff;
+      margin: 0;
+      border-radius: 0 4px 0 0;
     }
   }
 
   .dark-label {
-    color: #D0D0D0;
+    color: #d0d0d0;
   }
 
   .white-label {
     color: #121212;
   }
 
-  .molecules-market-cap {
-    border-right: 2px solid #E0E0E0;
-
-    .atom-label {
-      color: #D0D0D0; 
-    }
-  }
-
   .molecules-bitcoin-percent-row {
     justify-content: space-between;
 
     .molecules-percent-text {
-      color: #0A5E36;
+      color: #0a5e36;
+      align-self: flex-end;
     }
   }
 
   .molecules-price-label {
-    color: #D0D0D0;
-    font-weight: 500;
+    color: #121212;
   }
 
   .molecules-dot-separator {
-    color: #C4C4C4;
+    color: #c4c4c4;
+    margin-left: 8px;
   }
 
   .molecules-btc-text {
     color: #858585;
     margin: 0;
+    align-self: center;
+    margin-left: 8px;
+  }
+
+  .molecules-market-cap {
+    border-right: 2px solid #e0e0e0;
+    padding-right: 0;
+
+    .molecules-market-cap-row {
+      margin-right: 0;
+    }
+
+    .atom-label {
+      color: #000000;
+    }
   }
 
   .molecules-value-column {
     .molecules-value-label {
-      color: #D0D0D0; 
+      color: #000000;
     }
 
     .molecules-add-btc-label {
-      color: #46CCFF;
+      color: #0c2dc8;
+    }
+
+    .molecules-value-sub-btc-label {
+      color: #858585;
+      font-size: 12px;
+      align-self: center;
     }
   }
 }
 
 .molecules-moonlistCard-dark {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
+
+  .molecules-price-label {
+    color: #d0d0d0 !important;
+  }
+
+  .molecules-dot-separator {
+    color: #c4c4c4;
+    margin-left: 8px;
+  }
+
+  .molecules-market-cap {
+    .atom-label {
+      color: #d0d0d0;
+    }
+  }
+  .molecules-value-column {
+    .molecules-value-label {
+      color: #d0d0d0;
+    }
+
+    .molecules-add-btc-label {
+      color: #46ccff;
+    }
+  }
 }

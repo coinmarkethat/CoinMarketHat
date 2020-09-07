@@ -140,7 +140,7 @@ class CryptoCurrencyTable extends React.Component {
   }
 
   render() {
-    const { theme } = this.props;
+    const { theme, history } = this.props;
     return (
       <CustomTable className={'organism-table-container'}>
         <tbody>
@@ -163,12 +163,14 @@ class CryptoCurrencyTable extends React.Component {
               >
                 <td>
                   <Icon
+                    onClick={() => alert('moonboard-bookmark', index)}
                     name="Star"
                     color={theme === 'dark' ? '#858585' : '#000000'}
                   />
                 </td>
                 <td>
                   <CurrencyIconText
+                    onClick={() => history.push('./dashboarddetails')}
                     theme={theme}
                     source={item.data.image}
                     textTitle={item.data.coin}

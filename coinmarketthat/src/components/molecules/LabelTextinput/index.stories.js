@@ -12,7 +12,9 @@ storiesOf('molecule/LabelTextInput')
         placeholder="white theme"
         text="Please input some text here."
         value={state.value}
-        onChange={(text) => { return setState({ value: text.target.value }); }}
+        onChange={(text) => {
+          return setState({ value: text.target.value });
+        }}
         labelTitle="Email-Address"
       />
     );
@@ -25,7 +27,9 @@ storiesOf('molecule/LabelTextInput')
         placeholder="white theme"
         text="Password here ."
         value={state.value}
-        onChange={(text) => { return setState({ value: text.target.value }); }}
+        onChange={(text) => {
+          return setState({ value: text.target.value });
+        }}
         labelTitle="Email-Address"
       />
     );
@@ -38,7 +42,9 @@ storiesOf('molecule/LabelTextInput')
         placeholder="dark theme"
         text="Please input some text here."
         value={state.value}
-        onChange={(text) => { return setState({ value: text.target.value }); }}
+        onChange={(text) => {
+          return setState({ value: text.target.value });
+        }}
         labelTitle="Password"
       />
     );
@@ -51,7 +57,9 @@ storiesOf('molecule/LabelTextInput')
         placeholder="white theme"
         text="Please input some text here."
         value={state.value}
-        onChange={(text) => { return setState({ value: text.target.value }); }}
+        onChange={(text) => {
+          return setState({ value: text.target.value });
+        }}
         labelTitle="Password"
       />
     );

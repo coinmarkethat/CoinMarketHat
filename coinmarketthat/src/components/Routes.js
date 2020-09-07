@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import {
   Landing,
+  LandingDetails,
   Login,
   Signup,
   ResetPassword,
@@ -22,6 +23,7 @@ export default function Routes() {
           }}
         />
         <Route exact path="/dashboard" component={Landing} />
+        <Route exact path="/dashboarddetails" component={LandingDetails} />
         <Route exact path="/moonboard" component={MoonBoard} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />

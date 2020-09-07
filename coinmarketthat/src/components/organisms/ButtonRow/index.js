@@ -6,7 +6,7 @@ import SearchBox from '../../molecules/SearchBox';
 import { Col, Row } from 'react-bootstrap';
 import './styles.scss';
 
-const ButtonRow = ({ theme }) => {
+const ButtonRow = ({ theme, setFilterModalVisible }) => {
   const [select, setSelect] = useState('Landing');
   const selectBtn = (btnName) => {
     setSelect(btnName);
@@ -23,7 +23,6 @@ const ButtonRow = ({ theme }) => {
             color={select == 'Landing' ? '#0C2DC8' : '#BEBEBE'}
             onClick={() => selectBtn('Landing')}
           />
-
           <IconText
             isSelect={select == 'Exchange' ? true : false}
             theme={theme}
@@ -48,7 +47,10 @@ const ButtonRow = ({ theme }) => {
             textTitle="Filter"
             isSelect={select == 'Filter' ? true : false}
             color={select == 'Filter' ? '#0C2DC8' : '#BEBEBE'}
-            onClick={() => selectBtn('Filter')}
+            onClick={() => {
+              selectBtn('Filter');
+              setFilterModalVisible();
+            }}
           />
           <IconText
             theme={theme}

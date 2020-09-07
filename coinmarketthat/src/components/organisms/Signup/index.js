@@ -47,7 +47,10 @@ class Signup extends React.Component {
         <H3>Sign Up</H3>
         <Label>
           Already have an account ?&nbsp;
-          <Label className="organisms-signup-signin-text" onClick={() => history.push('/login')}>
+          <Label
+            className="organisms-signup-signin-text"
+            onClick={() => history.push('/login')}
+          >
             Sign in
           </Label>
         </Label>

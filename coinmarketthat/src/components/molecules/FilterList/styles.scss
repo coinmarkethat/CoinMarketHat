@@ -1,14 +1,22 @@
 .molecule-filterlist-wrapper {
-  width:500px;
-
-  .atom-label,svg{
-    color:#858585;
+  .atom-label {
+    color: #858585;
+    font-size: 13px;
   }
 
-  .atom-hr{
-    border-top:2px solid #C4C4C4 ;
+  .atom-hr {
+    border-top: 2px solid #c4c4c4;
+    margin-top: 4px;
   }
-  svg{
-    float:right;
+
+  svg {
+    float: right;
+    color: #858585;
+    height: 16px;
+    width: 16px;
+  }
+
+  .molecule-filterlist-row {
+    align-items: center;
   }
 }

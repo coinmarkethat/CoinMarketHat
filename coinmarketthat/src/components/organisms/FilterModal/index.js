@@ -12,15 +12,15 @@ const FilterModal = ({ theme, isVisible, onHideFilterModal }) => {
       backdropClassName="organism-backdrop-invisible"
       show={isVisible}
       onHide={onHideFilterModal}
-      className={theme === 'dark' ? "organism-filter-modal-wrapper dark-content" : "organism-filter-modal-wrapper"}
+      className={
+        theme === 'dark'
+          ? 'organism-filter-modal-wrapper dark-content'
+          : 'organism-filter-modal-wrapper'
+      }
     >
       <Modal.Header>
-        <Label className="organism-modal-header-filter">
-          Filter
-        </Label>
-        <Label className="organism-modal-header-clear">
-          Clear Filter
-        </Label>
+        <Label className="organism-modal-header-filter">Filter</Label>
+        <Label className="organism-modal-header-clear">Clear Filter</Label>
       </Modal.Header>
       <Modal.Body>
         <FilterList
@@ -53,7 +53,7 @@ const FilterModal = ({ theme, isVisible, onHideFilterModal }) => {
           icon="Dash"
           onClick={() => console.log('minus clicked')}
           type="link"
-          color={theme === 'dark' ? "#46CCFF" : "#2A53D5"}
+          color={theme === 'dark' ? '#46CCFF' : '#2A53D5'}
         />
         <Row className="organism-filter-modal-inputrow">
           <Col md={5}>
@@ -85,17 +85,19 @@ const FilterModal = ({ theme, isVisible, onHideFilterModal }) => {
       <Modal.Footer>
         <Button
           className="organism-filter-modal-cancel-btn"
-          onClick={onHideFilterModal}>
+          onClick={onHideFilterModal}
+        >
           Cancel
         </Button>
         <Button
           className="organism-filter-modal-apply-btn"
-          onClick={() => console.log('Click me')}>
+          onClick={() => console.log('Click me')}
+        >
           Apply
         </Button>
       </Modal.Footer>
     </Modal>
   );
-}
+};
 
 export default FilterModal;

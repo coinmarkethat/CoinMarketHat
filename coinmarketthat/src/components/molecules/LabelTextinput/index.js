@@ -13,7 +13,7 @@ const LabelTextInput = ({
   onChange,
   labelTitle,
   onClick,
-  hideShowText=''
+  hideShowText = '',
 }) => {
   return (
     <Container className={'molecule-textinput-label-wrapper'}>
@@ -27,7 +27,9 @@ const LabelTextInput = ({
           onChange={onChange}
           value={value}
         />
-        {hideShowText && <Label onClick={onClick && onClick}>{hideShowText}</Label>}
+        {hideShowText && (
+          <Label onClick={onClick && onClick}>{hideShowText}</Label>
+        )}
       </Row>
     </Container>
   );

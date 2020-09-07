@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Div } from '../../atoms';
 import { SummaryHeader } from '../../molecules';
-import { AddCryptoCurrencyBox } from '../../molecules';
+import { MoonList } from '../../organisms';
 
 class MoonBoardTemplate extends React.Component {
   render() {
@@ -24,7 +24,7 @@ class MoonBoardTemplate extends React.Component {
           btcDominance={btcDominance}
           marketCap={marketCap}
         />
-        <AddCryptoCurrencyBox theme={theme} />
+        <MoonList theme={theme} />
       </Div>
     );
   }

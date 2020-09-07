@@ -1,11 +1,11 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
-import CurrencySearchList from "./index";
-import { LogoBitcoin, LiteCoin } from "../../../Assets";
+import CurrencySearchList from './index';
+import { LogoBitcoin, LiteCoin } from '../../../assets';
 
-storiesOf("molecule/CurrencySearchList")
-  .add("Dark", () => (
+storiesOf('molecule/CurrencySearchList')
+  .add('Dark', () => (
     <CurrencySearchList
       theme="dark"
       source={LogoBitcoin}
@@ -13,7 +13,7 @@ storiesOf("molecule/CurrencySearchList")
       isAdded={false}
     />
   ))
-  .add("White", () => (
+  .add('White', () => (
     <CurrencySearchList
       theme="white"
       source={LiteCoin}

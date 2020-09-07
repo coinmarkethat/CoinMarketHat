@@ -2,7 +2,7 @@ import React from 'react';
 import Signup from './index';
 
 export default {
-  title: 'organism'
+  title: 'organism',
 };
 
 export const signupWhite = () => {

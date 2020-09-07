@@ -6,18 +6,8 @@ import { LogoBitcoin, LiteCoin } from '../../../assets';
 
 storiesOf('molecule/CurrencyIconText')
   .add('CurrencyIconText-dark', () => (
-    <CurrencyIconText
-    theme='dark'
-    source={LogoBitcoin}
-    textTitle='Bitcoin'
-    />
+    <CurrencyIconText theme="dark" source={LogoBitcoin} textTitle="Bitcoin" />
   ))
   .add('CurrencyIconText-white', () => (
-    <CurrencyIconText
-    theme='white'
-    source={LiteCoin}
-    textTitle='LiteCoin'
-    />
-  ))
-
-
+    <CurrencyIconText theme="white" source={LiteCoin} textTitle="LiteCoin" />
+  ));

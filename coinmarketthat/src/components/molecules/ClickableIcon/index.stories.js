@@ -6,10 +6,6 @@ import ClickableIcon from './index';
 
 storiesOf('molecule/touchableicon').add('user-icon-touch', () => {
   return (
-    <ClickableIcon
-      onClick={action('icon touch')}
-      iconName="User"
-      color="red"
-    />
+    <ClickableIcon onClick={action('icon touch')} iconName="User" color="red" />
   );
 });

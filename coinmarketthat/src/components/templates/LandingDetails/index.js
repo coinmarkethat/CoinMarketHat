@@ -24,7 +24,9 @@ class LandingDetailsTemplate extends React.Component {
           btcDominance={btcDominance}
           marketCap={marketCap}
         />
-        <H4><H4>Landing-Details</H4></H4>
+        <H4>
+          <H4>Landing-Details</H4>
+        </H4>
       </Div>
     );
   }
