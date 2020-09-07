@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Footer, Navbar } from '../../organisms';
-import LandingDetailsTemplate from '../../templates/LandingDetails';
+import { LandingDetailsTemplate } from '../../templates';
 
 class LandingDetails extends Component {
   state = {

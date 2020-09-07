@@ -5,13 +5,7 @@ import { CurrencyIconText } from '../';
 import { LogoBitcoin } from '../../../assets';
 import './styles.scss';
 
-const CurrencySearchList = ({
-  theme,
-  source,
-  textTitle,
-  isAdded,
-  isBorderVisible,
-}) => {
+const CurrencySearchList = ({ theme, textTitle, isAdded, isBorderVisible }) => {
   return (
     <Div
       theme={theme}
