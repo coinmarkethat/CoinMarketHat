@@ -1,0 +1,74 @@
+.organism-addmooncard-modal-wrapper {
+
+  .dark-theme.molecules-currencySearchList-container{
+    background:#1e1e1e;
+    label{
+      margin-bottom:0px;
+    }
+  }
+  .modal-content {
+    background: none;
+    border: none;
+  }
+
+  .modal-header {
+    align-items: center;
+    border: none;
+    padding-bottom: 0;
+    background-color: #FFFFFF;
+
+    .atom-label {
+      color: #101010;
+      font-size: 19px;
+    }
+  }
+
+  .modal-body {
+    padding-bottom: 32px;
+    background-color: #FFFFFF;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+  }
+
+  .modal-footer {
+    background-color: #FFFFFF;
+    flex-direction: column;
+    align-items: inherit;
+    border: 1px solid #C9C9C9;
+    margin: -24px 16px 0 16px;
+    border: 1px solid #C9C9C9;
+    z-index: 999;
+    border-radius: .3rem;
+  }
+}
+
+.modal-dark-content {
+  .modal-header {
+    background-color: #1E1E1E;
+
+    .atom-label {
+      color: #FFFFFF;
+    }
+  }
+
+  .modal-body {
+    background-color: #1E1E1E;
+
+    .atom-input-dark {
+      background-color: #1E1E1E;
+      color: #D0D0D0;
+    }
+  }
+
+  .modal-footer {
+    background-color: #1E1E1E;
+
+    .molecules-currencyicontext-container {
+      border: none;
+    }
+  }
+}
+
+.organism-backdrop-add-mooncard-modal {
+  background: rgba(18, 18, 18, 0.6);
+}
